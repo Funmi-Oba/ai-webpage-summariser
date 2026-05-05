@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Summarizer</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- TOP BAR -->
+    <header>
+      <div class="logo">⚡ Summarizer</div>
+      <button id="clearBtn" class="icon-btn" title="Clear" aria-label="Clear">↺</button>
+    </header>
+
+    <!-- PAGE TITLE (filled automatically by JavaScript) -->
+    <div id="pageTitle" class="page-title">Loading page info...</div>
+
+    <!-- WORD COUNT INFO -->
+    <div id="wordInfo" class="word-info"></div>
+
+    <!-- MAIN BUTTON -->
+    <button id="summarizeBtn" class="primary-btn">
+      Summarize Page
+    </button>
+
+    <!-- LOADING SPINNER (hidden until needed) -->
+    <div id="loadingState" class="hidden loading">
+      <div class="spinner"></div>
+      <span>Analyzing page...</span>
+    </div>
+
+    <!-- ERROR MESSAGE (hidden until needed) -->
+    <div id="errorMsg" class="hidden error"></div>
+
+    <!-- SUMMARY OUTPUT (hidden until summary is ready) -->
+    <div id="outputArea" class="hidden output">
+
+      <section>
+        <h3>📋 Summary</h3>
+        <ul id="summaryList"></ul>
+      </section>
+
+      <section>
+        <h3>💡 Key Insights</h3>
+        <ul id="insightsList"></ul>
+      </section>
+
+      <div class="meta-row">
+        <span id="readingTime"></span>
+        <button id="copyBtn" class="copy-btn">Copy</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
