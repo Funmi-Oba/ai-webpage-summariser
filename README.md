@@ -2,10 +2,10 @@
 A Chrome Extension (Manifest V3) that extracts content from any webpage and generates a structured AI summary in one click.
 
 🎥 Demo Video
-Click here to watch the demo
+[Click here to watch the demo](https://drive.google.com/file/d/1ndopHoQ_IskiTbzU2Ua8P0JJOswidumI/view?usp=sharing)
 
 🔗 GitHub Repository
-Click here to view the code
+[Click here to view the code](https://github.com/Funmi-Oba/ai-webpage-summariser)
 
 📸 What It Does
 When you click the extension icon on any webpage it will extract the main article content from the page, send it to an AI through a secure Vercel proxy server using Groq Llama 3.3 model, and display a 5 bullet point summary, 3 key insights, and estimated reading time. It also caches the result so it never calls the AI twice for the same page.
